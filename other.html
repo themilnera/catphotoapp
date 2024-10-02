@@ -4,112 +4,138 @@
 <head>
   <title>cat quiz</title>
   <meta attribute="utf-8" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <main>
-    <h1>Cat Quiz (pass or get scratched)</h1>
-    <section>
-      <figure>
-        <img
-          src="https://cdn.theatlantic.com/thumbor/Kto-jp-IrA7TydSu5W5uB1FBDmA=/0x131:2555x1568/1952x1098/media/img/mt/2017/06/shutterstock_319985324/original.jpg"
-          alt="cat gonna get you"
-          style="width: 600px; height: 400px"
-        />
-        <figcaption>You don't wanna mess with this guy</figcaption>
-      </figure>
-    </section>
-    <section>
-      <!--Yeah I don't know how the action thing works so I'm using the same url-->
-      <form action="https://freecatphotoapp.com/submit-cat-photo">
-        <fieldset>
-          <legend>What is better, human or cat?</legend>
-          <label
-            ><input
-              checked
-              id="cat"
-              type="radio"
-              name="better"
-              value="cat"
-            />Cat</label
-          >
-          <label
-            ><input id="catobv" type="radio" name="better" value="catobv" />Cat
-            obviously</label
-          >
-          <label
-            ><input
-              disabled
-              id="human"
-              type="radio"
-              name="better"
-              value="human"
-            />Human</label
-          >
-        </fieldset>
+     <div class="banner"></div>
+        <h1>The Cat Photo App</h1>
+      </div>
+      <!--Photo section-->
+      <nav>
+        <ul>
+          <li id="cat-photo-link">
+            <a target="_blank" href="https://freecatphotoapp.com">Cat Photos</a>
+          </li>
+          <li id="cat-quiz-link"><a href="other.html">Cat Quiz</a></li>
+          <li id="home-link"><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    <div class="flexbox content">
+      <h1>Cat Quiz (pass or get scratched)</h1>
+      <section>
+        <figure>
+          <img
+            src="https://cdn.theatlantic.com/thumbor/Kto-jp-IrA7TydSu5W5uB1FBDmA=/0x131:2555x1568/1952x1098/media/img/mt/2017/06/shutterstock_319985324/original.jpg"
+            alt="cat gonna get you"
+            style="width: 600px; height: 400px"
+          />
+          <figcaption>You don't wanna mess with this guy</figcaption>
+        </figure>
+      </section>
+      <section>
+        <!--Yeah I don't know how the action thing works so I'm using the same url-->
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>What is better, human or cat?</legend>
+            <label
+              ><input
+                checked
+                id="cat"
+                type="radio"
+                name="better"
+                value="cat"
+              />Cat</label
+            >
+            <label
+              ><input
+                id="catobv"
+                type="radio"
+                name="better"
+                value="catobv"
+              />Cat obviously</label
+            >
+            <label
+              ><input
+                disabled
+                id="human"
+                type="radio"
+                name="better"
+                value="human"
+              />Human</label
+            >
+          </fieldset>
 
-        <fieldset>
-          <legend>Who deserves to rule the world?</legend>
-          <label
-            ><input
-              checked
-              id="cats"
-              type="radio"
-              name="rule"
-              value="cats"
-            />Cats</label
-          >
-          <label
-            ><input
-              id="dogs"
-              type="radio"
-              name="rule"
-              value="dogs"
-            />Dogs</label
-          >
-          <label
-            ><input
-              disabled
-              id="humans"
-              type="radio"
-              name="rule"
-              value="humans"
-            />Humans</label
-          >
-        </fieldset>
+          <fieldset>
+            <legend>Who deserves to rule the world?</legend>
+            <label
+              ><input
+                checked
+                id="cats"
+                type="radio"
+                name="rule"
+                value="cats"
+              />Cats</label
+            >
+            <label
+              ><input
+                id="not-dogs"
+                type="radio"
+                name="rule"
+                value="dogs"
+              />Not Dogs</label
+            >
+            <label
+              ><input
+                disabled
+                id="humans"
+                type="radio"
+                name="rule"
+                value="humans"
+              />Humans</label
+            >
+          </fieldset>
 
-        <fieldset>
-          <legend>What is the best musical?</legend>
-          <label
-            ><input
-              checked
-              id="catsmusical"
-              type="radio"
-              name="musical"
-              value="catsmusical"
-            />Cats (not the live action movie)</label
-          >
-          <label
-            ><input
-              disabled
-              id="lesmiserables"
-              type="radio"
-              name="musical"
-              value="lesmiserables"
-            />Les Miserables</label
-          >
-          <label
-            ><input
-              disabled
-              id="choosecats"
-              type="radio"
-              name="musical"
-              value="choose"
-            />Just choose Cats already</label
-          >
-          <button type="submit">Submit</button>
-        </fieldset>
-      </form>
-    </section>
+          <fieldset>
+            <legend>What is the best musical?</legend>
+            <label
+              ><input
+                checked
+                id="catsmusical"
+                type="radio"
+                name="musical"
+                value="catsmusical"
+              />Cats (not the live action movie)</label
+            >
+            <label
+              ><input
+                disabled
+                id="lesmiserables"
+                type="radio"
+                name="musical"
+                value="lesmiserables"
+              />Les Miserables</label
+            >
+            <label
+              ><input
+                disabled
+                id="choosecats"
+                type="radio"
+                name="musical"
+                value="choose"
+              />Just choose Cats already</label
+            >
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+    </div>
   </main>
+  <footer>
+    <p>
+      No Copyright -
+      <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+    </p>
+  </footer>
 </body>
